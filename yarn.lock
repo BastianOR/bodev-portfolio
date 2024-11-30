@@ -1098,9 +1098,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bastian-fedev@workspace:.":
+"binary-extensions@npm:^2.0.0":
+  version: 2.3.0
+  resolution: "binary-extensions@npm:2.3.0"
+  checksum: bcad01494e8a9283abf18c1b967af65ee79b0c6a9e6fcfafebfe91dbe6e0fc7272bafb73389e198b310516ae04f7ad17d79aacf6cb4c0d5d5202a7e2e52c7d98
+  languageName: node
+  linkType: hard
+
+"bodev-portfolio@workspace:.":
   version: 0.0.0-use.local
-  resolution: "bastian-fedev@workspace:."
+  resolution: "bodev-portfolio@workspace:."
   dependencies:
     "@eslint/js": ^9.15.0
     "@types/react": ^18.3.12
@@ -1121,13 +1128,6 @@ __metadata:
     vite: ^6.0.1
   languageName: unknown
   linkType: soft
-
-"binary-extensions@npm:^2.0.0":
-  version: 2.3.0
-  resolution: "binary-extensions@npm:2.3.0"
-  checksum: bcad01494e8a9283abf18c1b967af65ee79b0c6a9e6fcfafebfe91dbe6e0fc7272bafb73389e198b310516ae04f7ad17d79aacf6cb4c0d5d5202a7e2e52c7d98
-  languageName: node
-  linkType: hard
 
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11

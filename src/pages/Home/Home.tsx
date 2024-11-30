@@ -48,10 +48,12 @@ function CyberSeparator1() {
 function GlitchButton({ text }: { text: string }) {
   return (
     <div className="mt-[59px]">
-        <span className="inconsolata text-[24px] font-semibold tracking-[2px] block">CONTACT ME</span>
-      <button className="button-49" role="button">
+        <span className="inconsolata text-[24px] font-semibold tracking-[2px] block">
+          CLICK HERE:
+        </span>
+      <a href="mailto:bastianossandon1@gmail.com" className="button-49" role="button">
         {text}
-      </button>
+      </a>
     </div>
   );
 }
