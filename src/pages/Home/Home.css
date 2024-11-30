@@ -1,0 +1,38 @@
+.home-container {
+    @apply w-[1075px] flex justify-between gap-[45px];
+}
+
+.home-container main p {
+    @apply text-white opacity-[0.62] font-medium leading-[134%] text-left text-[28px] mt-[32px];
+}
+
+
+@keyframes blur-in {
+    0% {
+      opacity: 0;
+      filter: blur(5px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes blur-out {
+    0% {
+      opacity: 1;
+      filter: blur(0);
+    }
+    100% {
+      opacity: 0;
+      filter: blur(5px);
+    }
+  }
+  
+  .blurry-text {
+    animation: blur-out 0.2s ease-out forwards;
+  }
+  
+  .blurry-in {
+    animation: blur-in 0.2s ease-out forwards;
+  }

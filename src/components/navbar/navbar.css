@@ -1,0 +1,9 @@
+.navbar {
+    @apply flex gap-6;
+}
+.navbar a {
+    @apply hover:text-[#23D3FB] cursor-default;
+}
+.navbar span {
+    @apply font-thin;
+}

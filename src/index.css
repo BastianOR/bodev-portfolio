@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, "Inter", serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, #root {
+  min-height: 100vh;
+  @apply w-full flex flex-col items-center;
+  color: #ffffff;
+  background-color: #1A1A1A;
+}
+
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.instrument-sans {
+  font-family: "Instrument Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inconsolata {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  @apply opacity-75 font-bold text-[45px] text-white instrument-sans leading-9;
+}
+
+h6 {
+  @apply inconsolata font-bold text-[#23D3FB] text-2xl;
+}
+
+
+
+
+
+
+/* Button */
+.button-49,
+.button-49:after {
+  font-size: 24px;
+  background: linear-gradient(0deg, transparent 5%, #ff013c00 5%);
+  border: 0;
+  color: #fff;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  height: auto;
+  text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  @apply py-0 px-0 inconsolata font-bold tracking-[3px];
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  font-size: 24px;
+  content: '< bastianossandon1@gmail.com />';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, transparent 3%, #00e6f6a8 3%, #00e6f69e 5%, #00000075 5%);
+  text-shadow: -3px -3px 0px #f8f00533, 3px 3px 0px #00e6f67f;
+  clip-path: var(--slice-0);
+  width: auto;
+  height: auto;
+  @apply py-0 px-0 inconsolata font-bold tracking-[3px];
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
