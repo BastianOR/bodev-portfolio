@@ -16,7 +16,7 @@ export default function Navbar() {
           <span>/</span>
           <a href="">03. Contact</a>
           <span>/</span>
-          <a href="">04. GitHub</a>
+          <a target="_blank" href="https://github.com/BastianOR">04. GitHub</a>
         </nav>
       </section>
     </div>

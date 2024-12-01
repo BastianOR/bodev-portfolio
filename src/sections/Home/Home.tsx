@@ -9,12 +9,12 @@ import SectionEndLine from "../../components/section-endline/section-endline";
 export default function Home() {
   return (
     <>
-      <div className="min-w-[300px] w-full max-w-[1197px] mx-[105px] px-4 md:px-8 lg:px-[61px] mt-[102px]">
+      <section className="min-w-[300px] w-full max-w-[1197px] mx-[105px] px-4 md:px-8 lg:px-[61px] mt-[102px]">
         <div className="home-container">
           <LandingProfile />
           <LandingContent />
         </div>
-      </div>
+      </section>
       <div className="min-w-[300px] w-full max-w-[1326px] px-4 md:px-8 lg:px-[61px] xl:px-[105px]">
         <SectionEndLine section="home" />
       </div>
