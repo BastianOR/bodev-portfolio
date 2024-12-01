@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import "./Home.css";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
+import GlitchButton from "../../components/glitchbutton/glitch-button";
+import CyberSeparator1 from "../../components/cyberseparator1/cyber-separator1";
 
 export default function Home() {
   return (
@@ -34,36 +36,11 @@ function LandingContent() {
         UX/UI.
       </p>
       <AlternativeEmailButton />
-      <GlitchButton text="< bastianossandon1@gmail.com />" />
+      <GlitchButton
+        title="Get in touch"
+        text="< bastianossandon1@gmail.com />"
+      />
     </main>
-  );
-}
-
-function CyberSeparator1() {
-  return (
-    <div className="w-full h-auto mt-2 opacity-30">
-      <div className="w-full h-auto flex flex-row items-center justify-center gap-[1px]">
-        <div className="w-full h-[2px] bg-white"></div>
-        <div className="w-[15px] h-[6px] bg-white"></div>
-      </div>
-    </div>
-  );
-}
-
-function GlitchButton({ text }: { text: string }) {
-  return (
-    <div className="mt-[48px] lg:mt-[68px] hidden xs:block">
-      <span className="inconsolata text-[24px] lg:text-[18px] font-semibold tracking-[2px] block">
-        Wanna talk? Click here:
-      </span>
-      <a
-        href="mailto:bastianossandon1@gmail.com"
-        className="button-49"
-        role="button"
-      >
-        {text}
-      </a>
-    </div>
   );
 }
 
@@ -98,7 +75,7 @@ function LandingProfile() {
   const [index, setIndex] = useState(0);
   const [isBlurred, setIsBlurred] = useState(false);
   const thingsToSay = useMemo(
-    () => ["RESPONSIVENESS", "ACCESIBILITY", "USABILITY", "PERFORMANCE"],
+    () => ["DESIGN", "UX/UI", "FRONTEND", "RESPONSIVE", "MOBILE", "DATABASE"],
     []
   );
 
