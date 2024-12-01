@@ -2,7 +2,7 @@
     @apply flex gap-6;
 }
 .navbar a {
-    @apply hover:text-[#23D3FB] cursor-default;
+    @apply hover:text-[var(--accent)] cursor-default;
 }
 .navbar span {
     @apply font-thin;

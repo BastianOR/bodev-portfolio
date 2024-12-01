@@ -2,7 +2,7 @@ import "./navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="min-w-[300px] mt-[32px] w-full max-w-[1197px]">
+    <div className="min-w-[300px] mt-[32px] w-full max-w-[1197px] hidden xmd:block">
       <section className="mx-[61px] flex justify-between items-center inconsolata text-[20px] font-semibold">
         <div aria-description="Language/Idioma" className="flex gap-2">
           <button className="text-black bg-white px-[1px]">EN</button>
