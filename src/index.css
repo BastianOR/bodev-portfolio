@@ -53,15 +53,9 @@ h6 {
   @apply inconsolata font-bold text-[#23D3FB] text-2xl;
 }
 
-
-
-
-
-
-/* Button */
+/* Special Button */
 .button-49,
 .button-49:after {
-  font-size: 24px;
   background: linear-gradient(0deg, transparent 5%, #ff013c00 5%);
   border: 0;
   color: #fff;
@@ -77,7 +71,7 @@ h6 {
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 black;
-  @apply py-0 px-0 inconsolata font-bold tracking-[3px];
+  @apply py-0 px-0 inconsolata font-bold tracking-[3px] text-[25px] sm:text-[24px] lg:text-[18px];
 }
 
 .button-49:after {
@@ -100,7 +94,7 @@ h6 {
   clip-path: var(--slice-0);
   width: auto;
   height: auto;
-  @apply py-0 px-0 inconsolata font-bold tracking-[3px];
+  @apply py-0 px-0 inconsolata font-bold tracking-[3px] text-[25px] sm:text-[24px] lg:text-[18px];
 }
 
 .button-49:hover:after {
