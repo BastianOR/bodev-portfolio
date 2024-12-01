@@ -4,6 +4,7 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import GlitchButton from "../../components/glitchbutton/glitch-button";
 import CyberSeparator1 from "../../components/cyberseparator1/cyber-separator1";
+import SectionEndLine from "../../components/section-endline/section-endline";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         </div>
       </div>
       <div className="min-w-[300px] w-full max-w-[1326px] px-4 md:px-8 lg:px-[61px] xl:px-[105px]">
-        <HomeEndLine />
+        <SectionEndLine section="home" />
       </div>
     </>
   );
@@ -41,33 +42,6 @@ function LandingContent() {
         text="< bastianossandon1@gmail.com />"
       />
     </main>
-  );
-}
-
-function AlternativeEmailButton() {
-  return (
-    <div className="mt-[48px] w-full flex justify-center xs:hidden">
-      <a
-        href="mailto:bastianossandon1@gmail.com"
-        className="min-w-[200px] w-[80%] max-w-[270px] py-4 px-2 border-t-2 border-b-2 text-white hover:text-opacity-70 border-white inconsolata text-3xl text-center"
-      >
-        Write me!
-      </a>
-    </div>
-  );
-}
-
-function HomeEndLine() {
-  return (
-    <div className="w-full mt-[81px] opacity-80 flex flex-col items-center">
-      <div className="w-full h-auto flex flex-row items-center justify-between">
-        <span className="text-white font-[Inconsolata] font-bold text-[24px] tracking-[5px]">
-          HOME
-        </span>
-        <div className="w-2 h-2 bg-white pr-[1px]"></div>
-      </div>
-      <div className="w-full h-[2px] bg-white"></div>
-    </div>
   );
 }
 
@@ -147,5 +121,18 @@ function LandingProfile() {
         </button>
       </div>
     </section>
+  );
+}
+
+function AlternativeEmailButton() {
+  return (
+    <div className="mt-[48px] w-full flex justify-center xs:hidden">
+      <a
+        href="mailto:bastianossandon1@gmail.com"
+        className="min-w-[200px] w-[80%] max-w-[270px] py-4 px-2 border-t-2 border-b-2 text-white hover:text-opacity-70 border-white inconsolata text-3xl text-center"
+      >
+        Write me!
+      </a>
+    </div>
   );
 }
